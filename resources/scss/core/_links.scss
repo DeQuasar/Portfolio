@@ -1,0 +1,12 @@
+.disabled {
+  cursor: default;
+
+  color:           gray;
+  text-decoration: line-through;
+
+  transition: none;
+
+  &:hover {
+    color: gray;
+  }
+}
