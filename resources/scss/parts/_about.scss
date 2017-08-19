@@ -1,0 +1,44 @@
+#about {
+  padding:    8em;
+
+  background: $primary-color;
+
+  header {
+    display:        flex;
+    flex-direction: column;
+    align-self:     center;
+    align-items:    center;
+
+    color: rgb(255, 255, 255);
+
+    > .welcome {
+      display:        flex;
+      align-self:     center;
+      align-items:    center;
+
+      padding-top: 1em;
+
+      h1 {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+
+        margin-left: 1em;
+
+        line-height: 1em;
+      }
+    }
+
+    > .social {
+      .icon {
+        fill: rgba(255, 255, 255, 0.6);
+        transition: fill $speed $easing;
+
+        &:hover {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+
+}
