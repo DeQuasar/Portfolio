@@ -83,6 +83,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-/node_modules/
-/.idea/
-/.idea/watcherTasks.xml
+.idea/
