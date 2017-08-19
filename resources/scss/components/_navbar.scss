@@ -1,0 +1,17 @@
+.navbar {
+  padding: 1em;
+
+  background: $navbar-background;
+
+  @include box-shadow;
+
+  a {
+    margin: 0.5em 1.5em;
+
+    color: $link-color;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+}
