@@ -84,4 +84,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 /node_modules/
-/generated-screenshots/
+/.idea/
+/.idea/watcherTasks.xml
