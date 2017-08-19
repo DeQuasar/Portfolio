@@ -1,0 +1,15 @@
+#site {
+  display:        flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+#home {
+  flex: 1;
+
+  .container {
+    display:        flex;
+    flex-direction: column;
+  }
+}
