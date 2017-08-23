@@ -1,3 +1,13 @@
+// Box Shadow
 @mixin box-shadow() {
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.20);
+}
+
+// Media Query Mixin
+@mixin media-query($Size) {
+  @if $Size == 'Phone' {
+    @media only screen and (max-width: $Phone) { @content; }
+  } @else if $Size == 'Tablet' {
+    @media only screen and (max-width: $Tablet) { @content; }
+  }
 }
