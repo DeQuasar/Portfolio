@@ -190,12 +190,12 @@ section header > h2 {
           flex-direction: column;
 }
 
-#about {
+#header {
   padding: 8em;
   background: #bf3c00;
 }
 
-#about header {
+#header header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@ section header > h2 {
   color: white;
 }
 
-#about header > .welcome {
+#header header > .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +223,7 @@ section header > h2 {
   padding-top: 1em;
 }
 
-#about header > .welcome h1 {
+#header header > .welcome h1 {
   display: inherit;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -232,17 +232,18 @@ section header > h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 1em;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
   line-height: 1em;
 }
 
-#about header > .social .icon {
+#header header > .social .icon {
   fill: rgba(255, 255, 255, 0.6);
   -webkit-transition: fill 200ms ease-in-out;
   transition: fill 200ms ease-in-out;
 }
 
-#about header > .social .icon:hover {
+#header header > .social .icon:hover {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
   fill: white;
 }
 
