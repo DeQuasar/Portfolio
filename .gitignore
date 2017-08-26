@@ -85,3 +85,9 @@ $RECYCLE.BIN/
 *.lnk
 .idea/
 .idea/workspace.xml
+
+resources/
+
+package.json
+readme.md
+gulpfile.js
