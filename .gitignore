@@ -81,8 +81,5 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# Windows shortcuts
-*.lnk
-/node_modules/
 /.idea/
 /.idea/watcherTasks.xml
