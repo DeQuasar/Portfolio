@@ -87,6 +87,7 @@ $RECYCLE.BIN/
 .idea/workspace.xml
 
 resources/
+node_modules/
 
 package.json
 readme.md
