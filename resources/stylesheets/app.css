@@ -65,11 +65,23 @@ h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
+}
+
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 1.6em;
+  }
 }
 
 h2 {
   font-size: 1.8em;
+}
+
+@media only screen and (max-width: 40em) {
+  h2 {
+    font-size: 1.3em;
+  }
 }
 
 p, a {
@@ -82,14 +94,14 @@ p, a {
 }
 
 a {
-  color: rgba(29, 29, 29, 0.6);
+  color: rgba(14, 13, 12, 0.6);
   text-decoration: none;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 a:hover {
-  color: black;
+  color: rgba(14, 13, 12, 0.8);
 }
 
 .disabled {
@@ -105,21 +117,32 @@ a:hover {
 }
 
 .container {
+  padding: 1em;
   margin: 0 auto;
-  width: 100%;
   max-width: 970px;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .container {
+    padding: 0.5em;
+  }
+}
+
 section {
-  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5em;
 }
 
 section header > h2 {
-  margin-bottom: 1em;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+  border-bottom: 2px solid rgba(191, 60, 0, 0.6);
 }
 
 .navbar {
-  padding: 1em;
+  padding: 0.5em;
   background: white;
   -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.2);
@@ -127,11 +150,11 @@ section header > h2 {
 
 .navbar a {
   margin: 0.5em 1.5em;
-  color: rgba(29, 29, 29, 0.6);
+  color: rgba(14, 13, 12, 0.6);
 }
 
 .navbar a:hover {
-  color: black;
+  color: rgba(14, 13, 12, 0.8);
 }
 
 .grid {
@@ -147,6 +170,15 @@ section header > h2 {
           flex-direction: row;
 }
 
+@media only screen and (max-width: 40em) {
+  .grid.row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .grid.column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -157,6 +189,13 @@ section header > h2 {
 .grid > .item {
   margin-right: 1em;
   width: 33%;
+}
+
+@media only screen and (max-width: 40em) {
+  .grid > .item {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .grid > .item:last-child {
@@ -193,6 +232,18 @@ section header > h2 {
 #header {
   padding: 8em;
   background: #bf3c00;
+}
+
+@media only screen and (max-width: 43.75em) {
+  #header {
+    padding: 4em;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  #header {
+    padding: 1em;
+  }
 }
 
 #header header {
@@ -263,4 +314,32 @@ section header > h2 {
 .project-list .project .project-image {
   width: 100%;
   height: 230px;
+}
+
+footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > .container .social .icon {
+  fill: rgba(14, 13, 12, 0.6);
+  -webkit-transition: fill 200ms ease-in-out;
+  transition: fill 200ms ease-in-out;
+}
+
+footer > .container .social .icon:hover {
+  fill: rgba(14, 13, 12, 0.8);
 }

@@ -3,6 +3,14 @@
 
   background: $primary-color;
 
+  @include media-query(Tablet) {
+    padding: 4em;
+  }
+
+  @include media-query(Phone) {
+    padding: 1em;
+  }
+
   header {
     display:        flex;
     flex-direction: column;

@@ -1,12 +1,16 @@
 // Palette
 $primary-color: rgb(191, 60, 0);
 
+// Media Query Sizes
+$phone:  40.000em;
+$tablet: 43.750em;
+
 // Navbar
 $navbar-background: rgb(255, 255, 255);
 
 // Typography
-$link-color:       rgba(29, 29, 29, 0.6);
-$link-color-hover: rgba(0, 0, 0, 1);
+$link-color:       rgba(14, 13, 12, 0.6);;
+$link-color-hover: rgba(14, 13, 12, 0.8);;
 
 // Transition
 $speed:  200ms;
