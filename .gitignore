@@ -82,6 +82,7 @@ $RECYCLE.BIN/
 *.msp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Windows shortcuts
 *.lnk
 .idea/
@@ -90,3 +91,9 @@ resources/
 node_modules/
 
 gulpfile.js
+=======
+/.idea/
+/.idea/watcherTasks.xml
+
+/node_modules/
+>>>>>>> development
