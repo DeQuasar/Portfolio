@@ -4,6 +4,10 @@
 
   &.row {
     flex-direction: row;
+
+    @include media-query(Phone) {
+      flex-direction: column;
+    }
   }
 
   &.column {
@@ -14,6 +18,12 @@
     margin-right: 1em;
 
     width: 33%;
+
+    @include media-query(Phone) {
+      margin: 0;
+
+      width: 100%;
+    }
 
     &:last-child {
       margin: 0;
