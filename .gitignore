@@ -81,6 +81,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+<<<<<<< HEAD
 # Windows shortcuts
 *.lnk
 .idea/
@@ -88,6 +89,4 @@ $RECYCLE.BIN/
 resources/
 node_modules/
 
-package.json
-readme.md
 gulpfile.js
