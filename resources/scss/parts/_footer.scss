@@ -1,0 +1,21 @@
+footer {
+
+  > .container {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+
+    .social {
+      display: flex;
+
+      .icon {
+        fill: $link-color;
+
+        transition: fill $speed $easing;
+        &:hover {
+          fill: $link-color-hover;
+        }
+      }
+    }
+  }
+}
