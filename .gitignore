@@ -86,6 +86,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 .idea/
+.idea/workspace.xml
 
 resources/
 node_modules/
