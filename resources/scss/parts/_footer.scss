@@ -1,0 +1,23 @@
+footer {
+
+  > .container {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+
+    border-top: 2px solid rgba(191,60,0,.6);
+
+    .social {
+      display: flex;
+
+      .icon {
+        fill: $link-color;
+
+        transition: fill $speed $easing;
+        &:hover {
+          fill: $link-color-hover;
+        }
+      }
+    }
+  }
+}
