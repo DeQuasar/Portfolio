@@ -7,6 +7,18 @@
       align-items:     center;
 
       border-bottom: 5px solid $primary-color;
+
+      span > a {
+        margin-left: 0.4em;
+      }
+
+      @include media-query(Tablet) {
+        flex-direction: column;
+      }
+
+      @include media-query(Phone) {
+        flex-direction: row;
+      }
     }
 
     .project-image {

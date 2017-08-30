@@ -142,19 +142,40 @@ section header > h2 {
 }
 
 .navbar {
-  padding: 0.5em;
   background: white;
   -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a {
+.navbar > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar > .container a {
   margin: 0.5em 1.5em;
   color: rgba(14, 13, 12, 0.6);
 }
 
-.navbar a:hover {
+.navbar > .container a:hover {
   color: rgba(14, 13, 12, 0.8);
+}
+
+.navbar > .container .hire > a {
+  padding: 0.5em 1.5em;
+  margin: 0;
+  color: white;
+  background-color: rgba(191, 60, 0, 0.8);
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.navbar > .container .hire > a:hover {
+  background-color: #bf3c00;
 }
 
 .grid {
@@ -283,8 +304,8 @@ section header > h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
   line-height: 1em;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 #header header > .social .icon {
@@ -311,6 +332,28 @@ section header > h2 {
   border-bottom: 5px solid #bf3c00;
 }
 
+.project-list .project > h3 span > a {
+  margin-left: 0.4em;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .project-list .project > h3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .project-list .project > h3 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .project-list .project .project-image {
   width: 100%;
   height: 230px;
@@ -326,6 +369,7 @@ footer > .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 2px solid rgba(191, 60, 0, 0.6);
 }
 
 footer > .container .social {

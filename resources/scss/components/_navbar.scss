@@ -1,17 +1,41 @@
 .navbar {
-  padding: 0.5em;
-
   background: $navbar-background;
 
   @include box-shadow;
 
-  a {
-    margin: 0.5em 1.5em;
+  > .container {
 
-    color: $link-color;
+    display:         flex;
+    justify-content: space-between;
 
-    &:hover {
-      color: $link-color-hover;
+    a {
+      margin: 0.5em 1.5em;
+
+      color: $link-color;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+
+    .main-links {
+
+    }
+
+    .hire {
+      > a {
+        padding: 0.5em 1.5em;
+        margin:  0;
+
+        color:            rgb(255, 255, 255);
+        background-color: rgba($primary-color, 0.8);
+
+        transition: background-color $speed $easing;
+
+        &:hover {
+          background-color: rgba($primary-color, 1);
+        }
+      }
     }
   }
 }
