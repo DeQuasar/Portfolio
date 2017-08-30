@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -95,4 +96,7 @@ gulpfile.js
 =======
 
 /node_modules/
+>>>>>>> development
+=======
+/.idea/
 >>>>>>> development
