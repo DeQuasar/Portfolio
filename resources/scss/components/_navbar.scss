@@ -12,14 +12,14 @@
       margin: 0.5em 1.5em;
 
       color: $link-color;
-
+      
       &:hover {
         color: $link-color-hover;
       }
-    }
-
-    .main-links {
-
+      
+      @include media-query(Phone) {
+        margin: 0.5em 0.5em;
+      }
     }
 
     .hire {
