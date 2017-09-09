@@ -122,7 +122,7 @@ a:hover {
   max-width: 970px;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 48em) {
   .container {
     padding: 0.5em;
   }
@@ -215,7 +215,7 @@ section header > h2 {
   background: #bf3c00;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 48em) {
   #header {
     padding: 4em;
   }
@@ -279,6 +279,12 @@ section header > h2 {
   fill: white;
 }
 
+@media only screen and (max-width: 48em) {
+  #about .about-content {
+    text-align: center;
+  }
+}
+
 .project-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,6 +312,10 @@ section header > h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 1em;
   color: white;
   background-color: #bf3c00;
@@ -313,13 +323,38 @@ section header > h2 {
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
+@media only screen and (max-width: 48em) {
+  .project-list .project .project-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 .project-list .project .project-content > .project-image {
-  width: 300px;
   height: 250px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 48em) {
+  .project-list .project .project-content > .project-image {
+    max-height: 200px;
+    height: auto;
+    width: 100%;
+  }
 }
 
 .project-list .project .project-content .project-description {
   margin-left: 1em;
+}
+
+@media only screen and (max-width: 48em) {
+  .project-list .project .project-content .project-description {
+    margin-top: 0.5em;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 footer {
