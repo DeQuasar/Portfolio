@@ -1,0 +1,9 @@
+#about {
+  .about-content {
+
+    @include media-query(Tablet) {
+      text-align: center;
+    }
+
+  }
+}
