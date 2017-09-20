@@ -62,7 +62,7 @@ const sassOptions = {
  */
 
 const autoprefixerOptions = {
-    browsers: ['last 2 versions'],
+    browsers: ['last 2 version'],
     cascade:  false,
     grid:     true
 };
