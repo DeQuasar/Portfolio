@@ -279,6 +279,23 @@ section header > h2 {
   fill: white;
 }
 
+#header header > .resume {
+  padding: 0.2em 2em;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 40em) {
+  #header header > .resume {
+    padding: 0.1em 1.5em;
+  }
+}
+
+#header header > .resume:hover {
+  color: rgba(14, 13, 12, 0.6);
+  background-color: white;
+}
+
 @media only screen and (max-width: 48em) {
   #about .about-content {
     text-align: center;
