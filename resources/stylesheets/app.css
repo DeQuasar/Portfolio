@@ -175,12 +175,16 @@ section header > h2 {
   margin: 0;
   color: white;
   background-color: rgba(191, 60, 0, 0.8);
-  -webkit-transition: background-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
 }
 
 .navbar > .container .hire > a:hover {
   background-color: #bf3c00;
+  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 #site {
@@ -244,10 +248,9 @@ section header > h2 {
 }
 
 #header header > .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inherit;
   -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -292,8 +295,10 @@ section header > h2 {
 }
 
 #header header > .resume:hover {
-  color: rgba(14, 13, 12, 0.6);
+  color: rgba(14, 13, 12, 0.8);
   background-color: white;
+  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 48em) {
@@ -325,6 +330,27 @@ section header > h2 {
   margin: 1em 0;
 }
 
+.project-list .project h3 > span a {
+  padding: 0.5em 1em;
+  margin-left: 1em;
+  color: white;
+  background-color: rgba(191, 60, 0, 0.8);
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 40em) {
+  .project-list .project h3 > span a {
+    margin-left: 0.5em;
+  }
+}
+
+.project-list .project h3 > span a:hover {
+  background-color: #bf3c00;
+  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
 .project-list .project .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,6 +378,8 @@ section header > h2 {
 .project-list .project .project-content > .project-image {
   height: 250px;
   width: 300px;
+  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 48em) {
