@@ -9,6 +9,28 @@
       align-items:     center;
 
       margin: 1em 0;
+
+      > span {
+        a {
+          padding: 0.5em 1em;
+          margin-left: 1em;
+
+          color:            rgb(255, 255, 255);
+          background-color: rgba($primary-color, 0.8);
+
+          transition: background-color $speed $easing;
+
+          @include media-query(Phone) {
+            margin-left: 0.5em;
+          }
+
+          &:hover {
+            background-color: rgba($primary-color, 1);
+
+            @include box-shadow;
+          }
+        }
+      }
     }
 
     .project-content {
@@ -29,6 +51,8 @@
       > .project-image {
         height: 250px;
         width:  300px;
+
+        @include box-shadow;
 
         @include media-query(Tablet) {
           max-height: 200px;
